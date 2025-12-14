@@ -28,7 +28,7 @@ def main():
     # ImageNet pretrained MobileNetV2
     model = models.mobilenet_v2(weights="IMAGENET1K_V1")
 
-    # 🔴 CIFAR-10 FIX (MANDATORY)
+    # CIFAR-10 FIX
     model.features[0][0].stride = (1, 1)
 
     print(model.features[0][0])
