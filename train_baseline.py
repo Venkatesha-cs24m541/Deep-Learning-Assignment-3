@@ -28,6 +28,11 @@ def main():
     # MobileNetV2 from torchvision (NO pretraining)
     model = models.mobilenet_v2(weights=None)
 
+    # CIFAR-10 FIX
+    model.features[0][0].stride = (1, 1)
+
+    print(model.features[0][0])
+
     # Replace classifier for CIFAR-10
     model.classifier[1] = nn.Linear(
         model.classifier[1].in_features, 10
