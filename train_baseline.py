@@ -48,12 +48,12 @@ def main():
     )
 
     scheduler = optim.lr_scheduler.CosineAnnealingLR(
-        optimizer, T_max=150
+        optimizer, T_max=300
     )
 
     criterion = nn.CrossEntropyLoss()
 
-    for epoch in range(150):
+    for epoch in range(300):
         model.train()
         for x, y in train_loader:
             x, y = x.to(device), y.to(device)
