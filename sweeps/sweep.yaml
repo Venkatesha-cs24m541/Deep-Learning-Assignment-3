@@ -1,1 +1,17 @@
+program: train_quantized.py
 
+method: grid
+
+metric:
+  name: accuracy
+  goal: maximize
+
+parameters:
+  weight_quant_bits:
+    values: [2, 3, 4, 8]
+
+  activation_quant_bits:
+    values: [2, 3, 4, 8]
+
+  model_init:
+    values: ["scratch", "pretrained"]
