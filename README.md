@@ -40,18 +40,23 @@ git clone https://github.com/Venkatesha-cs24m541/Deep-Learning-Assignment-3
    ┣ apply_compression.py #Apply the compression <br>
    ┣ quant_layers.py #Qualntisation layers <br>
    ┣ quant_utils.py #Quantisation Utilities <br>
+<br>
  ┣ sweeps <br>
    ┣ sweep.yaml # W&B sweep configuration <br>
+<br>
  ┣ utils # Utilities needed <br>
    ┣ activation_size.py #Activation sizes <br>
    ┣ cifar.py #Transforms used for CIFAR <br>
    ┣ memory.py #Memory of model and f32 size <br>
+<br>
  ┣ README.md # This documentation <br>
+<br> 
  ┣ results/ # The report plots <br>
    ┣ Results.csv #Results of quantisation <br>
    ┣ Baseline_Accuracy.png #Baseline Accuracy PNG <br>
    ┣ Scatter_Plot.png #Quantisation scatter plot <br>
    ┣ Scatter_Plot_1.png #Quantisation scatter plot 1 <br>
+<br>   
  ┣ train_baseline.py/ # Train the baseline from scratch <br>
  ┣ train_pretrained.py/ # Train the baseline using pretrained model <br>
  ┗ train_quantized.py/ # Train the quantised model <br>
